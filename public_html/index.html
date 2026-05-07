@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+25ВП2
+Дунаев Артём
+Вариант 8
+-->
+<html lang="ru">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Хаотичное передвижение фигур</title>
+      <link rel="shortcut icon" href="#">
+      <link rel="stylesheet" href="css/styles.css" />
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <h1 class="main">Лабораторная работа №5. Дунаев Артём. Вариант 8</h1>
+        <p class="task">
+            По экрану хаотично перемещаются фигуры. При наведении курсора
+            на фигуру она, продолжая движение, мгновенно увеличивается до
+            максимального размера и остается в таком состоянии, пока на нее
+            наведен курсор. Стартовое количество объектов, и максимальный
+            размер в процентах от стартового задает пользователь.
+        </p>
+        <div class="container">
+            <div class="control-panel">
+                <label>
+                    Количество фигур:
+                    <input type="number" id="count"
+                           min="1" max="20" step="1" value="5">
+                </label>
+                <label>
+                    Максимальный размер (%):
+                    <input type="number" id="scale"
+                           min="100" max="400" step="1" value="200" >
+                </label>
+                <button id="startBtn">Запустить</button>
+            </div>
+            <div class="animation-area" id="animationArea"></div>
+      </div>
+    </body>
+</html>
